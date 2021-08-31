@@ -1,0 +1,44 @@
+{
+  "name": "jambagecom/mailbyzip",
+  "type": "typo3-cms-extension",
+  "description": "Send email to receivers in dependence of the entered ZIP code.",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "powermail",
+    "zip"
+  ],
+  "support": {
+    "issues": "https://jambage.com/kontakt/forum.html"
+  },
+  "homepage": "https://jambage.com",
+  "authors": [
+    {
+      "name": "Franz Holzinger",
+      "role": "Developer",
+      "homepage": "https://ttproducts.de"
+    }
+  ],
+  "license": [
+    "GPL-2.0-or-later"
+  ],
+  "require": {
+    "php": "^5.5 || ^7.2",
+    "typo3/cms-core": "^9.5",
+    "in2code/powermail": ">=7.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "JambageCom\\Mailbyzip\\": "Classes"
+    }
+  },
+  "replace": {
+    "jambagecom/mailbyzip": "self.version",
+    "typo3-ter/mailbyzip": "self.version"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "mailbyzip"
+    }
+  }
+}

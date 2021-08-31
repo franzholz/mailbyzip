@@ -1,0 +1,23 @@
+
+
+lib.mailbyzip {
+   settings {
+      email {
+         A = a@example.com
+         B = b@example.com
+      }
+      receiver {
+         10 {
+           start = 88* 
+           email = A
+         }
+         20 {
+           start = 93* 
+           email = B
+         }
+      }
+   }
+   converter = USER
+   converter.userFunc = JambageCom\Mailbyzip\UserFunc\ZipReceiver->fetchEmails
+}
+
